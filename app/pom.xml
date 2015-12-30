@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- 坐标 -->
+	<groupId>com.app</groupId>
+	<artifactId>app</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>app</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<app.version>0.0.1-SNAPSHOT</app.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<!-- 子模块 -->
+	<modules>
+		<module>app-pom</module>
+		<module>app-core</module>
+		<module>app-dao</module>
+		<module>app-service</module>
+		<module>app-log</module>
+		<module>app-manage</module>
+		<module>app-web</module>
+	</modules>
+</project>

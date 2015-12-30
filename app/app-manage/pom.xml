@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- 父模块 -->
+	<parent>
+		<groupId>com.app</groupId>
+		<artifactId>app</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<!-- 坐标 -->
+	<artifactId>app-manage</artifactId>
+	<packaging>pom</packaging>
+
+	<!-- 依赖 -->
+	<dependencies>
+		<!-- 依赖子模块 -->
+		<dependency>
+			<groupId>com.app</groupId>
+			<artifactId>app-log</artifactId>
+			<version>${project.version}</version>
+			<type>jar</type>
+		</dependency>
+	</dependencies>
+
+	<!-- 子模块 -->
+	<modules>
+		<module>app-manage-cms</module>
+		<module>app-manage-bbs</module>
+	</modules>
+</project>
